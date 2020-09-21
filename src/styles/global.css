@@ -134,7 +134,7 @@ thead {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: calc(var(--rhythm) / 2) 0 var(--rhythm);
+  padding: calc(var(--rhythm) / 2) 0 calc(var(--rhythm) * 4);
 }
 
 button {
