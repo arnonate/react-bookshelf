@@ -22,7 +22,7 @@ export const TableActions = ({
       <span> Previous</span>
     </button>
 
-    <span>
+    <span className="progress">
       {count > 0 // TODO: Figure out why totalItems is different on every fetch
         ? `Showing ${page === 0 ? 1 : page * 10} - ${
             (page + 1) * 10

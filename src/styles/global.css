@@ -54,7 +54,7 @@ header {
 
 main {
   margin: auto;
-  max-width: 860px;
+  max-width: calc(860px + var(--rhythm) * 2);
   padding: 0 var(--rhythm);
   width: 100%;
 }
@@ -87,9 +87,15 @@ main {
   padding: calc(var(--rhythm) / 3) calc(var(--rhythm) / 2);
 }
 
+.table-container {
+  max-width: 100%;
+  overflow-y: scroll;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
+  min-width: 600px;
 }
 
 th,
@@ -146,6 +152,12 @@ button:disabled {
   color: var(--color-navy);
   cursor: not-allowed;
   opacity: 0.6;
+}
+
+@media (max-width: 480px) {
+  .progress {
+    display: none;
+  }
 }
 
 .sr-only {
