@@ -1,6 +1,6 @@
 {
   "name": "react-books",
-  "homepage": "https://arnonate.github.io/react-bookshelf",
+  "homepage": "https://arnonate.github.io/react-bookshelf/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
