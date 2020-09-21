@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-books/static/css/main.ece9a082.chunk.css",
+    "main.js": "/react-books/static/js/main.5bb368dd.chunk.js",
+    "main.js.map": "/react-books/static/js/main.5bb368dd.chunk.js.map",
+    "runtime-main.js": "/react-books/static/js/runtime-main.ab05e024.js",
+    "runtime-main.js.map": "/react-books/static/js/runtime-main.ab05e024.js.map",
+    "static/js/2.879f68dc.chunk.js": "/react-books/static/js/2.879f68dc.chunk.js",
+    "static/js/2.879f68dc.chunk.js.map": "/react-books/static/js/2.879f68dc.chunk.js.map",
+    "index.html": "/react-books/index.html",
+    "precache-manifest.84f20d19b782dcceb6e1c4373d800913.js": "/react-books/precache-manifest.84f20d19b782dcceb6e1c4373d800913.js",
+    "service-worker.js": "/react-books/service-worker.js",
+    "static/css/main.ece9a082.chunk.css.map": "/react-books/static/css/main.ece9a082.chunk.css.map",
+    "static/js/2.879f68dc.chunk.js.LICENSE.txt": "/react-books/static/js/2.879f68dc.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/react-books/static/media/logo.28a32a78.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ab05e024.js",
+    "static/js/2.879f68dc.chunk.js",
+    "static/css/main.ece9a082.chunk.css",
+    "static/js/main.5bb368dd.chunk.js"
+  ]
+}
