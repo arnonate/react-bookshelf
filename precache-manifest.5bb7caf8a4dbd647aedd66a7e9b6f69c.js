@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0318db5cf6c7bbdde95bb0258346a12d",
+    "revision": "b80602bdae371ef9fbcee6ff35db4211",
     "url": "/react-bookshelf/index.html"
   },
   {
-    "revision": "23a5791f593827f2964d",
-    "url": "/react-bookshelf/static/css/main.e162c415.chunk.css"
+    "revision": "726e2aa6fa9563eeac75",
+    "url": "/react-bookshelf/static/css/main.3b401c4c.chunk.css"
   },
   {
     "revision": "780674f138e1762d50b6",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-bookshelf/static/js/2.879f68dc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "23a5791f593827f2964d",
+    "revision": "726e2aa6fa9563eeac75",
     "url": "/react-bookshelf/static/js/main.8de1c6b9.chunk.js"
   },
   {
