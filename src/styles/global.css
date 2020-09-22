@@ -48,6 +48,12 @@ header {
   padding: calc(var(--rhythm) * 4) 0 var(--rhythm);
 }
 
+@media (max-width: 600px) {
+  header {
+    padding: calc(var(--rhythm) * 2) 0 0;
+  }
+}
+
 .logo {
   width: 200px;
 }
@@ -135,6 +141,12 @@ thead {
   display: flex;
   justify-content: space-between;
   padding: calc(var(--rhythm) / 2) 0 calc(var(--rhythm) * 4);
+}
+
+@media (max-width: 600px) {
+  .table-actions {
+    padding-bottom: calc(var(--rhythm) * 2);
+  }
 }
 
 button {
