@@ -10,7 +10,7 @@ I am fairly comfortable with the basics of TS and I decided to use it on this pr
 
 `react-query`
 
-This project was my first experience with React Query. I have been watching this project for a while and washappy to get a chance to finally use it. React Query has a lot of nice "out of the box" features like local caching, refetching and invalidation.
+This project was my first experience with React Query. I have been watching this project for a while and was happy to get a chance to finally use it. React Query has a lot of nice "out of the box" features like local caching, refetching and invalidation.
 
 `axios`
 
