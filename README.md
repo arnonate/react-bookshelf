@@ -22,11 +22,11 @@ I guess this isn't a novel decision anymore as React Testing Library now ships w
 
 ## If I had more time I would have...
 
-- Worked on the debounce a bit more so that the results aren't set back to page one when typing a new search query in.
-- Added more test coverage.
-- Spent more time on accessibility and performance wins.
-- Added keyboard navigation that included pagination and opening/interacting with the modal.
-- Spect more time with mobile styles.
+- worked on the debounce a bit more so that the results aren't set back to page one when typing a new search query in.
+- added more test coverage.
+- spent more time on accessibility and performance wins.
+- added keyboard navigation that included pagination and opening/interacting with the modal.
+- improved mobile styles.
 
 ## Development Info:
 
