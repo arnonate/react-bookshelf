@@ -2,6 +2,8 @@ import React from "react";
 
 import { SortType } from "./TableContainer";
 import { Book } from "../../hooks/useBooks";
+import { Modal } from "../";
+import { useModal } from "../../hooks/useModal";
 
 type TableComponentProps = {
   data?: Book[];
@@ -17,7 +19,15 @@ export const TableComponent = ({
   loading,
   setSortBy,
   sortBy,
-}: Readonly<TableComponentProps>) => {
+}: Readonly<TableComponentProps>): JSX.Element => {
+  const [activeBook, setActiveBook] = React.useState<Partial<Book>>({});
+  const { modalIsVisible, toggleModalVisibility } = useModal();
+
+  const handleBookClick = (book: Book): void => {
+    setActiveBook(book);
+    toggleModalVisibility();
+  };
+
   data.sort((a: Book, b: Book): number => {
     if (sortBy === "author") {
       return (a.volumeInfo["authors"]
@@ -70,8 +80,12 @@ export const TableComponent = ({
 
         <tbody>
           {data.length > 0 ? (
-            data.map((book: Book, ind: number) => (
-              <tr key={book.id + ind} tabIndex={0}>
+            data.map((book: Book) => (
+              <tr
+                key={book.id}
+                tabIndex={0}
+                onClick={() => handleBookClick(book)}
+              >
                 <td>{book.volumeInfo.title ?? "---"}</td>
                 <td>
                   {book.volumeInfo.authors ? book.volumeInfo.authors[0] : "---"}
@@ -103,6 +117,12 @@ export const TableComponent = ({
           )}
         </tbody>
       </table>
+
+      <Modal
+        isVisible={modalIsVisible}
+        toggleVisibility={toggleModalVisibility}
+        book={activeBook}
+      />
     </div>
   );
 };

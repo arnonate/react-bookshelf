@@ -10,14 +10,17 @@ export type SortType = "author" | "pages" | "title" | "date";
 
 export type TableContainerProps = {
   searchQuery: string;
-  isFetchingCallback: (isFetching: boolean) => void;
+  isFetchingCallback: (key: boolean) => void;
+  page: number;
+  setPage: (key: number) => void;
 };
 
 export const TableContainer = ({
   searchQuery,
   isFetchingCallback,
-}: Readonly<TableContainerProps>) => {
-  const [page, setPage] = React.useState(0);
+  page,
+  setPage,
+}: Readonly<TableContainerProps>): JSX.Element => {
   const [sortBy, setSortBy] = React.useState<SortType>("title");
   const debouncedSearchQuery = useDebounce(searchQuery, 600);
   const { status, data, error, isFetching } = useBooks(
@@ -30,12 +33,12 @@ export const TableContainer = ({
     isFetchingCallback,
   ]);
 
-  const books = data?.items ?? [];
-  const count = data?.totalItems ?? 0;
+  let books = data?.items ?? [];
+  let count = data?.totalItems ?? 0;
 
   return (
     <>
-      <p>* Sorted by</p>
+      <p>* Sort Column</p>
       <TableComponent
         data={books}
         loading={isFetching}

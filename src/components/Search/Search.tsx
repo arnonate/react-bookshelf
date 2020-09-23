@@ -10,7 +10,7 @@ export const Search = ({
   isFetching,
   value,
   onChange,
-}: Readonly<SearchProps>) => {
+}: Readonly<SearchProps>): JSX.Element => {
   return (
     <form className="search">
       <div role="search">

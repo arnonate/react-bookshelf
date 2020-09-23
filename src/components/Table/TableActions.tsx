@@ -10,7 +10,7 @@ export const TableActions = ({
   count,
   page,
   onClick,
-}: Readonly<TableActionsProps>) => (
+}: Readonly<TableActionsProps>): JSX.Element => (
   <div className="table-actions">
     <button
       disabled={count === 0 || page === 0}

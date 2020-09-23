@@ -13,9 +13,14 @@ export type VolumeInfo = {
   title: string;
 };
 
+export type SaleInfo = {
+  buyLink: string;
+};
+
 export type Book = {
   id: number;
   volumeInfo: VolumeInfo;
+  saleInfo: SaleInfo;
 };
 
 export type BookResponse = {
@@ -32,7 +37,7 @@ const getBooks = async (
   const { data } = await axios.get(
     `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(
       searchQuery
-    )}&fields=kind,items(id,volumeInfo(authors,imageLinks,pageCount,publishedDate,subtitle,title)),totalItems&startIndex=${page}`
+    )}&fields=kind,items(id,volumeInfo(authors,imageLinks,pageCount,publishedDate,subtitle,title),saleInfo(buyLink)),totalItems&startIndex=${page}`
   );
 
   return data;

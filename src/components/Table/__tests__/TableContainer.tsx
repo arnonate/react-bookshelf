@@ -10,7 +10,7 @@ describe("TableContainer", () => {
 
   test("🚀 renders help text", () => {
     const { getByText } = render(<TableContainer {...TableContainerProps} />);
-    const helpText = getByText(/sorted by/i);
+    const helpText = getByText(/sort column/i);
 
     expect(helpText).toBeInTheDocument();
   });

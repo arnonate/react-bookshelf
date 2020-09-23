@@ -15,7 +15,6 @@ ReactDOM.render(
       <App />
     </ReactQueryCacheProvider>
   </React.StrictMode>,
-
   document.getElementById("root")
 );
 
