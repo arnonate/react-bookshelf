@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { TableActions, TableActionsProps as PropTypes } from "../TableActions";
+import { TableActions, TableActionsProps as PropTypes } from "./TableActions";
 
 describe("TableActions", () => {
   const TableActionsProps: PropTypes = {

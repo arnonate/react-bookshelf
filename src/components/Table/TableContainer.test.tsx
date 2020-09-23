@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { TableContainer } from "../TableContainer";
+import { TableContainer } from "./TableContainer";
 
 describe("TableContainer", () => {
   const TableContainerProps = {
