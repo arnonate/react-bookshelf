@@ -38,7 +38,7 @@ export const TableContainer = ({
 
   return (
     <>
-      <p>* Sort Column</p>
+      <p>* Sort Priority</p>
       <TableComponent
         data={books}
         loading={isFetching}
