@@ -26,6 +26,7 @@ I guess this isn't a novel decision anymore as React Testing Library now ships w
 - Added more test coverage.
 - Spent more time on accessibility and performance wins.
 - Added keyboard navigation that included pagination and opening/interacting with the modal.
+- Spect more time with mobile styles.
 
 ## Development Info:
 
