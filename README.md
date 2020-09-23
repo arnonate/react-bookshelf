@@ -1,5 +1,7 @@
 # React Bookshelf
 
+Project Link: https://arnonate.github.io/react-bookshelf/
+
 ## Decisions:
 
 `typescript`
@@ -20,8 +22,12 @@ I guess this isn't a novel decision anymore as React Testing Library now ships w
 
 ## If I had more time I would have...
 
-- Add book details modal
-- Add complete test coverage
+- Worked on the debounce a bit more so that the results aren't set back to page one when typing a new search query in.
+- Added more test coverage.
+- Spent more time on accessibility and performance wins.
+- Added keyboard navigation that included pagination and opening/interacting with the modal.
+
+## Development Info:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
