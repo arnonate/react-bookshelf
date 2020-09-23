@@ -2,7 +2,7 @@
 
 Project Link: https://arnonate.github.io/react-bookshelf/
 
-## Decisions:
+## Decisions
 
 `typescript`
 
@@ -32,7 +32,7 @@ If this project got any bigger I would have broken the styles out into Styled Co
 - added keyboard navigation that included pagination and opening/interacting with the modal.
 - improved mobile styles.
 
-## Development Info:
+## Development Info
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
