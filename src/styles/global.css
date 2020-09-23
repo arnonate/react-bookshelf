@@ -233,13 +233,21 @@ button:disabled {
   flex-direction: column;
   justify-content: center;
   left: 50%;
-  max-width: calc(100% - (var(--rhythm) * 2));
-  min-width: 600px;
-  padding: calc(var(--rhythm) * 2);
+  max-width: calc(100vw - var(--rhythm));
+  max-height: calc(100vh - var(--rhythm));
+  min-width: 300px;
+  padding: calc(var(--rhythm) * 2) calc(var(--rhythm) * 2) var(--rhythm);
   position: fixed;
   text-align: center;
   top: 50%;
   transform: translate(-50%, -50%);
+  overflow-y: scroll;
+}
+
+@media (min-width: 600px) {
+  .modal {
+    min-width: 600px;
+  }
 }
 
 .modal-image {
