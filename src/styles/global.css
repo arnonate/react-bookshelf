@@ -4,6 +4,7 @@
   --color-border: #e5e5e5;
   --color-mute: #f8f8f8;
   --color-white: #ffffff;
+  --color-pink: #ff1493;
   --font-size: 16px;
   --line-height: 1.6;
   --rhythm: calc(var(--font-size) * var(--line-height));
@@ -12,6 +13,11 @@
 * {
   box-sizing: border-box;
 }
+
+*:focus {
+  box-shadow: 0 0 0 1px var(--color-pink);
+  outline: none;
+} /* TODO: Figure out why Firefox still puts dots around focused buttons */
 
 html {
   color: var(--color-navy);
@@ -83,7 +89,7 @@ main {
 }
 
 .search input:focus {
-  outline: 0;
+  outline: none;
   background-color: var(--color-white);
 }
 
@@ -99,41 +105,58 @@ main {
 }
 
 table {
+  border: 1px solid var(--color-border);
   border-collapse: collapse;
   width: 100%;
   min-width: 600px;
 }
 
-th,
-td {
-  border: 1px solid var(--color-border);
-  display: inline-block;
-  overflow: hidden;
-  padding: calc(var(--rhythm) / 2);
-  text-align: left;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 20%;
+thead {
+  border-bottom: 2px solid var(--color-border);
 }
 
-th {
-  cursor: pointer;
-}
-
-tr > *:first-child {
-  width: 60%;
-}
-
-tr > *[colSpan="3"] {
-  width: 100%;
+tr {
+  display: block;
 }
 
 tbody > tr:nth-child(odd) {
   background-color: var(--color-mute);
 }
 
-thead {
-  border-bottom: 2px solid var(--color-border);
+tr:focus {
+  box-shadow: inset 0 0 0 1px var(--color-pink);
+}
+
+tr > *:first-child {
+  width: 55%;
+}
+
+tr > *[colSpan="4"] {
+  width: 100%;
+} /* Allow full width on hint cells. Keep below :first-child width. */
+
+th,
+td {
+  display: inline-block;
+  overflow: hidden;
+  padding: calc(var(--rhythm) / 3) calc(var(--rhythm) / 2);
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 15%;
+}
+
+th + th,
+td + td {
+  border-left: 1px solid var(--color-border);
+}
+
+tr + tr {
+  border-top: 1px solid var(--color-border);
+}
+
+th {
+  cursor: pointer;
 }
 
 .table-actions {

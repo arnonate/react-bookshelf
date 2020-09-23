@@ -1,6 +1,6 @@
 import React from "react";
 
-type TableActions = {
+export type TableActionsProps = {
   count: number;
   page: number;
   onClick: (arg: number) => void;
@@ -10,7 +10,7 @@ export const TableActions = ({
   count,
   page,
   onClick,
-}: Readonly<TableActions>) => (
+}: Readonly<TableActionsProps>) => (
   <div className="table-actions">
     <button
       disabled={count === 0 || page === 0}
@@ -19,11 +19,11 @@ export const TableActions = ({
       <span role="img" aria-label="Show Previous">
         👈
       </span>
-      <span> Previous</span>
+      <span> Prev</span>
     </button>
 
     <span className="progress">
-      {count > 0 // TODO: Figure out why totalItems is different on every fetch
+      {count > 0 // TODO: Deal with totalItems being different on every fetch
         ? `Showing ${page === 0 ? 1 : page * 10} - ${
             (page + 1) * 10
           } of ${count}`

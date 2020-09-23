@@ -3,7 +3,6 @@ import React from "react";
 import { Header, TableContainer, Search } from "../";
 
 export const App = () => {
-  // const [page, setPage] = React.useState(0);
   const [searchQuery, setSearchQuery] = React.useState("");
   const [isFetching, setIsFetching] = React.useState(false);
 
