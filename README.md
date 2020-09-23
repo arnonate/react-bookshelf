@@ -2,9 +2,13 @@
 
 ## Decisions:
 
+`typescript`
+
 `react-query`
 
 `react-testing-library`
+
+`axios`
 
 ## If I had more time I would have...
 
