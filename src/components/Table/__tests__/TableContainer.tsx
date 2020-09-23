@@ -6,6 +6,8 @@ describe("TableContainer", () => {
   const TableContainerProps = {
     searchQuery: "React",
     isFetchingCallback: jest.fn(),
+    page: 0,
+    setPage: jest.fn(),
   };
 
   test("🚀 renders help text", () => {

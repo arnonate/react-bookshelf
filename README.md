@@ -4,11 +4,19 @@
 
 `typescript`
 
+I am fairly comfortable with the basics of TS and I decided to use it on this project so that I can get some more practice with it. I have come to enjoy using types for props and the strictness ("safety") of having to provide input and return types.
+
 `react-query`
+
+This project was my first experience with React Query. I have been watching this project for a while and washappy to get a chance to finally use it. React Query has a lot of nice "out of the box" features like local caching, refetching and invalidation.
+
+`axios`
+
+Fetch isn't universally supported yet so I decided to pull in axios to get data from the Google API.
 
 `react-testing-library`
 
-`axios`
+I guess this isn't a novel decision anymore as React Testing Library now ships with Create React App.
 
 ## If I had more time I would have...
 
