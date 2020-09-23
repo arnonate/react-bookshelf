@@ -10,8 +10,8 @@ export const App = (): JSX.Element => {
   const handleSearchInputChange = (
     e: React.FormEvent<HTMLInputElement>
   ): void => {
-    setSearchQuery(e.currentTarget.value);
     setPage(0);
+    setSearchQuery(e.currentTarget.value);
   };
 
   return (
