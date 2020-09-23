@@ -20,6 +20,10 @@ Fetch isn't universally supported yet so I decided to pull in axios to get data 
 
 I guess this isn't a novel decision anymore as React Testing Library now ships with Create React App.
 
+`css`
+
+If this project got any bigger I would have broken the styles out into Styled Components or CSS Modules in order to avoid scoping problems. However, CSS worked just fine in this case.
+
 ## If I had more time I would have...
 
 - worked on the debounce a bit more so that the results aren't set back to page one when typing a new search query in.
