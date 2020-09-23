@@ -30,7 +30,7 @@ export type BookResponse = {
 };
 
 const getBooks = async (
-  _: string, // TODO: Figure out what to do with this arg
+  key: string, // TODO: Figure out what to do with this arg
   searchQuery: string,
   page: number
 ): Promise<BookResponse> => {
